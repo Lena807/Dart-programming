@@ -1,0 +1,9 @@
+
+void main(){
+  car("suzuki",1000);
+}
+
+void car(model, speed){
+  print(model);
+  print(speed);
+}
