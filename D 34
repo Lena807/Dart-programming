@@ -1,0 +1,16 @@
+void main(){
+  String destinationZone = 'pqr';
+  double weightInkgs = 4.5;
+  switch(destinationZone){
+    case "xyz":
+      print("shipping cost:${weightInkgs*5}");
+      case"abc":
+      print("shipping cost:${weightInkgs*7}");
+      case"pqr":
+      print("shipping cost:${weightInkgs*100}");
+  }
+}
+
+
+
+shipping cost:450
