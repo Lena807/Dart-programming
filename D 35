@@ -1,0 +1,23 @@
+void main() {
+  var details = printDetails();         // 1
+  print(details);                       // 2
+  print(details.$1);                    // 3
+  print(details.$2);                    // 4
+  print(details.$3);                    // 5
+  print(details.$4);                    // 6
+  print(details.$1.isEven);             // 7
+  print(details.$2.runtimeType);        // 8
+}
+
+(int, String, bool, String) printDetails() {  // 9
+  return (20, "nalini", true, "ui ux designer"); // 10
+}
+
+output:
+(20, nalini, true, ui ux designer)
+20
+nalini
+true
+ui ux designer
+true
+String
