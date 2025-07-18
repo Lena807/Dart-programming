@@ -1,0 +1,17 @@
+void main() {
+  final cookie = Cookie();
+  print(cookie._shape);
+  print(cookie._size);
+}
+
+ class Cookie{
+   String _shape="rect";  
+   double _size=10;
+   
+ }
+
+
+
+output will be ;
+rect
+10
