@@ -1,0 +1,17 @@
+void main() {
+  List<Student> students=[Student('nalini'),
+                         Student('dhinesh'),
+                         Student('surya'),
+                         Student('shiviya')];
+  final student = students[2];
+  print(student.name);
+  
+}
+class Student{
+  final String name;
+  Student(this.name);
+  
+}
+
+output;
+surya
