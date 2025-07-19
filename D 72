@@ -1,0 +1,24 @@
+void main (){
+  String motivation = "this is a good world";
+  //this is a good world =>This is a good world
+  // nalini=> nalini
+  motivation = motivation.capitaliseFirstLetter();
+  print(motivation);
+  String name = "nalini";
+  name = name.capitaliseFirstLetter();
+  print(name);
+}
+
+extension CapitaliseFirstLetter on String{
+  String capitaliseFirstLetter(){
+    return this[0].toUpperCase() + substring(1);
+  }
+}
+
+output:
+This is a good world
+Nalini
+
+
+// here we use the extension and it can create a function that can capitalise the first of every string when it is called.
+// in the extension after on when should specify the datatype of the value it is going to get as an input.
