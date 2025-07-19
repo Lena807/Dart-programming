@@ -1,0 +1,25 @@
+void main() {
+  Cat cat = Cat();
+  cat.screaming();
+  
+}
+mixin Jump{
+  int jumping =10;
+}
+mixin Scream{
+  void screaming(){
+    print("screaming");
+  }
+}
+class Cat with Jump,Scream{
+  void fn(){
+    print(jumping+5);
+  }
+  void screaming(){
+    print(" cat is screaming");
+  }
+}
+
+
+//MIXIN:= as we create a class we can create mixin and we can add any number mixin in another class like here i added two mixins but in inheritance we cannot extends two class that is the difference.
+//MIXIN is used with "WITH" keyword.we can access all the functions and properties of the mixin within our class.
