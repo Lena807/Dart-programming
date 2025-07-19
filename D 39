@@ -1,0 +1,9 @@
+void main(){
+  print(Constants.returnHeight());
+}
+class Constants{
+  static int Height =10;
+  static int returnHeight() {
+    return Height *8;
+  }
+}
