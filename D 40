@@ -1,0 +1,25 @@
+void main() {
+  Vehicle car = Car();
+  Vehicle truck = Truck();
+  print((car as Car).noOfWheels);
+  dynamic someValue = 10;
+  print((someValue as int).runtimeType);
+  print((truck as Truck).noOfWheel);
+}
+
+class Vehicle {
+  int speed = 10;
+  bool isEngineStarted = true;
+  bool isLightsOn = true;
+  int accelerate() {
+    return speed += 10;
+  }
+}
+
+class Car extends Vehicle {
+  int noOfWheels = 4;
+}
+
+class Truck extends Vehicle {
+  int noOfWheel = 8;
+}
