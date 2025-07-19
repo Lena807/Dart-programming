@@ -1,0 +1,30 @@
+void main() {
+  
+  List<Student> students=[Student('surya'),
+                         Student('keerthi'),
+                         Student('rathi'),
+                         Student('shiviya')];
+  
+  print(students);
+  
+ 
+  
+  
+  
+} 
+  
+  class Student{
+    final String name;
+    
+    Student(this.name);
+    
+    @override
+    String toString() => 'Student: $name';
+}
+
+
+output will be,
+[Student: surya, Student: keerthi, Student: rathi, Student: shiviya]
+
+
+// AS soon as we create a class dart automatically create a toString method and we can access it with the @override as mentioned above.
