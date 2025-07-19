@@ -1,0 +1,31 @@
+void main() {
+  
+  List<Student> students=[Student('surya'),
+                         Student('keerthi'),
+                         Student('rathi'),
+                         Student('shiviya')];
+  final student = students[0];
+  
+  print(student.name);
+  students[2]=Student('new kid');
+  print(students);
+  
+ 
+  
+  
+  
+} 
+  
+  class Student{
+    final String name;
+    
+    Student(this.name);
+    
+    @override
+    String toString() => 'Student: $name';
+}
+
+
+output will be,
+surya
+[Student: surya, Student: keerthi, Student: new kid, Student: shiviya]
