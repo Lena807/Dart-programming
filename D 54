@@ -1,0 +1,39 @@
+void main() {
+  
+  List<Student> students=[Student('surya',40),
+                         Student('kanni',30),
+                         Student('kutti',20),
+                         Student('bujji',10)];
+  
+  
+  
+ print(students); 
+  
+ 
+  
+  List<Student> filteredStudents = [];
+  
+  for(final student in students){
+    if(student.marks>20){
+      filteredStudents.add(student);
+  }
+  }
+  print(filteredStudents);
+} 
+
+
+  
+  class Student{
+    final String name;
+    final int marks;
+    Student(this.name,this.marks);
+    
+    
+
+    @override
+    String toString() => 'Student:$name';
+  }
+
+output:
+[Student:surya, Student:kanni, Student:kutti, Student:bujji]
+[Student:surya, Student:kanni]
